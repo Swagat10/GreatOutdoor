@@ -11,7 +11,9 @@ import com.capg.beans.Retailer;
 public interface RetailerDAOI {
 
 	public void add(Retailer r);
+	public Retailer findRetailerById(String id);
 	public List retrieve();
-	public Retailer findRetailerById(int id);
+	public void updateRetailer(Retailer retailer); 
+	public void removeRetailer(String retailerId) ;
 
 }

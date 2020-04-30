@@ -7,10 +7,12 @@ import org.springframework.stereotype.Service;
 import com.capg.beans.Retailer;
 
 @Service
-public interface RetailerServcieI 
+public interface RetailerServiceI 
 {
 	public void add(Retailer r);
-	public Retailer findRetailerByID(int id);
+	public Retailer findRetailerById(String id);
 	public List retrieve();
+	void updateRetailer(Retailer r);
+	void removeRetailer(String retailertId);
 
 }

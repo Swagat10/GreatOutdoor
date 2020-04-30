@@ -9,7 +9,7 @@ import com.capg.beans.Retailer;
 import com.capg.dao.RetailerDAOI;
 
 @Service
-public class RetailerServiceImpl implements RetailerServcieI
+public class RetailerServiceImpl implements RetailerServiceI
 {
 
 	@Autowired
@@ -21,7 +21,7 @@ public class RetailerServiceImpl implements RetailerServcieI
 		retailer.add(r);
 	}
 	
-	public Retailer findRetailerByID(int id) 
+	public Retailer findRetailerById(String id) 
 	{
 		return retailer.findRetailerById(id);
 	}
@@ -29,6 +29,18 @@ public class RetailerServiceImpl implements RetailerServcieI
 	public List retrieve() 
 	{
 		return retailer.retrieve();
+	}
+	
+	@Override
+	public void updateRetailer(Retailer r)
+	{
+		retailer.updateRetailer(r);	
+	}
+
+	@Override
+	public void removeRetailer(String retailerId)
+	{
+		retailer.removeRetailer(retailerId);	
 	}
 	
 }

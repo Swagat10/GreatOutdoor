@@ -12,7 +12,6 @@ public class Retailer
 {
 	@Id
 	String Retailer_Id;
-	
 	@Column
 	String Retailer_Name;
 	@Column
@@ -41,59 +40,66 @@ public class Retailer
 		this.Zip = zip;
 	}
 
-	public String getRetailer_Id() {
+	public String getRetailer_Id() 
+	{
 		return Retailer_Id;
 	}
-
-	public void setRetailer_Id(String retailer_Id) {
+	public void setRetailer_Id(String retailer_Id)
+	{
 		Retailer_Id = retailer_Id;
 	}
 
-	public String getRetailer_Name() {
+	public String getRetailer_Name() 
+	{
 		return Retailer_Name;
 	}
-
-	public void setRetailer_Name(String retailer_Name) {
+	public void setRetailer_Name(String retailer_Name) 
+	{
 		Retailer_Name = retailer_Name;
 	}
 
-	public String getBuidingNo() {
+	public String getBuidingNo() 
+	{
 		return BuidingNo;
 	}
-
-	public void setBuidingNo(String buidingNo) {
+	public void setBuidingNo(String buidingNo) 
+	{
 		BuidingNo = buidingNo;
 	}
 
-	public String getCity() {
+	public String getCity() 
+	{
 		return City;
 	}
-
-	public void setCity(String city) {
+	public void setCity(String city) 
+	{
 		City = city;
 	}
 
-	public String getState() {
+	public String getState() 
+	{
 		return State;
 	}
-
-	public void setState(String state) {
+	public void setState(String state) 
+	{
 		State = state;
 	}
-
-	public String getField() {
+	
+	public String getField() 
+	{
 		return Field;
 	}
-
-	public void setField(String field) {
+	public void setField(String field) 
+	{
 		Field = field;
 	}
 
-	public String getZip() {
+	public String getZip() 
+	{
 		return Zip;
 	}
-
-	public void setZip(String zip) {
+	public void setZip(String zip) 
+	{
 		Zip = zip;
 	}
 

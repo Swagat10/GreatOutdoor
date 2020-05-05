@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.capg.beans.Retailer;
 import com.capg.service.RetailerServiceI;
 
-@CrossOrigin
+@CrossOrigin(origins= "http://localhost:4200")
 @RestController
 
 public class RetailerController 
@@ -31,8 +31,8 @@ public class RetailerController
 		}
 		
 		
-		@PutMapping(value ="question/update", consumes= {"application/json"})
-		public String updateQuestion(@RequestBody Retailer retailer)
+		@PutMapping(value ="retailer/update", consumes= {"application/json"})
+		public String updateRetailer(@RequestBody Retailer retailer)
 		{
 			retailerService.updateRetailer(retailer);
 			return "Retailer Updated Successfully";
@@ -40,7 +40,7 @@ public class RetailerController
 		
 		
 		@DeleteMapping(value = "retailer/delete/{retailerId}")
-		public String removeQuestion(@PathVariable String retailerId)
+		public String removeRetailer(@PathVariable String retailerId)
 		{
 			retailerService.removeRetailer(retailerId);
 			return "Retailer removed Successfully";
@@ -53,7 +53,7 @@ public class RetailerController
 		}
 		
 		@GetMapping(value="/retailer")
-		public List<Retailer> viewProducts(){
+		public List<Retailer> viewRetailers(){
 			return retailerService.retrieve();
 		}
 		

@@ -20,7 +20,7 @@ public class GreatOutdoorJavaApplication implements CommandLineRunner {
 	
 	public void run(String... args) throws Exception
 	{
-	retail.add(new Retailer("10","Swagat","S10","Jalandhar","Punjab","Electronics","14411"));
+	//retail.add(new Retailer("10","Swagat","S10","Jalandhar","Punjab","Electronics","14411"));
 		
 	}
 

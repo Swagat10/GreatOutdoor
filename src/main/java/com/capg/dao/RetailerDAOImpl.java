@@ -40,18 +40,7 @@ public class RetailerDAOImpl implements RetailerDAOI
 	@Override
 	public void updateRetailer(Retailer retailer) 
 	{
-		Retailer newRetailer = em.find(Retailer.class, retailer.getRetailer_Id());
-		
-		if(newRetailer != null)
-		{
-			newRetailer.setRetailer_Id(retailer.getRetailer_Id());
-			newRetailer.setRetailer_Name(retailer.getRetailer_Name());
-			newRetailer.setBuidingNo(retailer.getBuidingNo());
-			newRetailer.setCity(retailer.getCity());
-			newRetailer.setState(retailer.getState()); 
-			newRetailer.setField(retailer.getField());
-			newRetailer.setZip(retailer.getZip());
-		}
+		em.merge(retailer);
 		
 	}
 

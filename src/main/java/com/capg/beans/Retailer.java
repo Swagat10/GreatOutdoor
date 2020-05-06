@@ -15,7 +15,7 @@ public class Retailer
 	@Column
 	String Retailer_Name;
 	@Column
-	String BuidingNo;
+	String BuildingNo;
 	@Column
 	String City;
 	@Column
@@ -28,12 +28,12 @@ public class Retailer
 	public Retailer() {	}
 	
 	//creation of construction
-	public Retailer(String retailer_Name, String retailer_Id, String buidingNo, String city, String state,String field, String zip) 
+	public Retailer(String retailer_Name, String retailer_Id, String buildingNo, String city, String state,String field, String zip) 
 	{
 		super();
 		this.Retailer_Name = retailer_Name;
 		this.Retailer_Id = retailer_Id;
-		this.BuidingNo = buidingNo;
+		this.BuildingNo = buildingNo;
 		this.City = city;
 		this.State = state;
 		this.Field = field;
@@ -58,13 +58,13 @@ public class Retailer
 		Retailer_Name = retailer_Name;
 	}
 
-	public String getBuidingNo() 
+	public String getBuildingNo() 
 	{
-		return BuidingNo;
+		return BuildingNo;
 	}
-	public void setBuidingNo(String buidingNo) 
+	public void setBuildingNo(String buidingNo) 
 	{
-		BuidingNo = buidingNo;
+		BuildingNo = buidingNo;
 	}
 
 	public String getCity() 

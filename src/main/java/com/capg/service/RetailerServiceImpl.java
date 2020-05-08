@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import com.capg.beans.Retailer;
 import com.capg.dao.RetailerDAOI;
 
+/*This service class is for the implementation of the RetailerServiceI class. */
+/*Controller asks for the services from it and it provides the data from DAO.*/
 @Service
 public class RetailerServiceImpl implements RetailerServiceI
 {
@@ -20,6 +22,8 @@ public class RetailerServiceImpl implements RetailerServiceI
 	{
 		retailer.add(r);
 	}
+	
+	/*The methods is this class are to view Retailers list,add,search,remove and update retailer details*/
 	
 	public Retailer findRetailerById(String id) 
 	{

@@ -6,12 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+
+/*Annotation for the datatable */
 @Table(name="Retailer10")
 
 public class Retailer
 {
-	@Id
-	String Retailer_Id;
+	@Id 
+	String Retailer_Id;/*Retailer_Id is the primary key*/
 	@Column
 	String Retailer_Name;
 	@Column
@@ -27,7 +29,7 @@ public class Retailer
 	
 	public Retailer() {	}
 	
-	//creation of construction
+	//Creation of construction
 	public Retailer(String retailer_Name, String retailer_Id, String buildingNo, String city, String state,String field, String zip) 
 	{
 		super();
@@ -39,7 +41,9 @@ public class Retailer
 		this.Field = field;
 		this.Zip = zip;
 	}
-
+	
+	
+	/*Getters and Setters*/
 	public String getRetailer_Id() 
 	{
 		return Retailer_Id;
